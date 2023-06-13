@@ -7,8 +7,38 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Hola</h1>
-    <div id="catalogue"></div>
+    <nav
+      class="navbar bg-dark navbar-expand-lg bg-body-tertiary mb-3"
+      data-bs-theme="dark"
+    ></nav>
+    <main class="container">
+      <div class="d-flex flex-column mb-4">
+        <input
+          type="text"
+          class="form-control mb-2"
+          id="search"
+          placeholder="Search..."
+        />
+        <div class="d-flex gap-2 justify-content-end">
+          <span>Ordenar por precio:</span>
+          <button type="button" class="btn btn-outline-secondary" id="asc">
+            Ascendente
+          </button>
+          <button type="button" class="btn btn-success disabled" id="des">
+            Descendente
+            <!--disable si lo ponog =true es True y si no lo pongo es false.-->
+          </button>
+        </div>
+      </div>
+      <section
+        id="catalogue"
+        class="row row-cols-1 row row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-1 mb-5"
+      ></section>
+    </main>
+    <div class="bg-dark">
+      <footer class="container" data-bs-theme="dark">Footer !!</footer>
+    </div>
   </body>
-  <script src="js/scripts.js"></script>
+  <script type="module" src="js/scripts.js"></script>
+  <!--los módulos de js tienen reservada la palabra import-->
 </html>
