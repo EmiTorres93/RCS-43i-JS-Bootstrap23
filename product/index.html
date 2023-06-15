@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="../css/globals.css" />
   </head>
 
   <body>
@@ -73,56 +73,24 @@
         </div>
       </div>
     </nav>
-    <main class="container">
-      <div class="d-flex flex-column mb-4">
-        <input
-          type="text"
-          class="form-control mb-2"
-          placeholder="Search ..."
-          id="search"
+    <main id="main">
+      <!--  <article class="card">
+        <h6 class="pt-2 px-2">
+          <span class="badge bg-primary text-uppercase" id="category"></span>
+        </h6>
+        <img
+          class="object-fit-contain pt-2 px-2"
+          style="height: 250px"
+          id="image"
         />
-        <div class="row mb-1">
-          <div class="col-2 col-md-4 col-lg-6"></div>
-          <div class="col very-small-font-size fw-bold">Ordenar por precio</div>
-          <div class="col d-flex justify-content-end gap-2">
-            <button
-              type="button"
-              class="btn very-small-font-size btn-outline-dark py-0 px-1 border-0"
-              id="asc"
-            >
-              Ascendente
-            </button>
-            <button
-              type="button"
-              class="btn very-small-font-size btn-dark disabled py-0 px-1 border-0"
-              id="des"
-            >
-              Descendente
-            </button>
-          </div>
+        <div class="card-body">
+          <h6 class="card-title" id="title"></h6>
         </div>
-        <div class="row">
-          <div class="col-2 col-md-4 col-lg-6"></div>
-          <div class="col very-small-font-size fw-bold">
-            Filtrar por categoria
-          </div>
-          <div class="col d-flex justify-content-end">
-            <button
-              type="button"
-              class="btn very-small-font-size btn-dark py-0 px-1 border-0 dropdown-toggle"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Todos
-            </button>
-            <ul class="dropdown-menu" id="categoryFilter"></ul>
-          </div>
+        <div class="card-footer d-flex flex-column">
+          <p class="h5 text-end" id="price">$</p>
+          <button class="btn btn-outline-primary">Comprar</button>
         </div>
-      </div>
-      <section
-        id="catalogue"
-        class="row row-cols-1 row row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-1 mb-5"
-      ></section>
+      </article> -->
     </main>
     <div class="bg-dark">
       <footer class="container" data-bs-theme="dark">
@@ -244,6 +212,5 @@
       </footer>
     </div>
   </body>
-  <script type="module" src="js/index.js"></script>
+  <script type="module" src="../js/product.js"></script>
 </html>
->
